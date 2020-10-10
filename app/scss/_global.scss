@@ -5,6 +5,7 @@ html,body{
     height: 100%;
     position: relative;
     overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 *,
 *::before,
@@ -26,11 +27,18 @@ a{
     display: inline-block;
     text-decoration: none;
     color: inherit;
+    &:hover{
+        transition: 0.3s;
+    }
 }
 ul,ol,li{
     margin: 0;
     padding: 0;
     list-style: none;
+}
+img{
+    width: 100%;
+    height: auto;
 }
 .wrapper {
 	display: flex;

@@ -1,19 +1,425 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AUTOSCAN - Інтернет-магазин автомобільної діагностики, сканери для діагностики, товщиноміри</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
-            Content
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="logo">
+                            <a class="logo__img" href="index.html" title="Autoscan - інтернет-магазин автомобільної діагностики">
+                                <img src="img/logo.svg" alt="">
+                            </a>
+                            <div class="logo__text">
+                                Інтернет-магазин автомобільної діагностики
+                            </div>
+                        </div>
+                        <div class="worktime icon-clock">
+                            <div class="worktime__hours">
+                                09:00 - 20:00
+                            </div>
+                            <div class="worktime__days">
+                                Пн - Нд
+                            </div>
+                        </div>
+                        <div class="phones icon-phone">
+                            <a class="phones__number" href="tel:0667917417">
+                                066 79 17 417
+                            </a>
+                            <a class="phones__number" href="tel:0974014601">
+                                097 40 14 601
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <nav class="menu">
+                <div class="container">
+                    <div class="menu__btn">
+                        Меню
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__scanners" href="">
+                                Сканери
+                            </a>
+                            <span class="drop-scanners icon-angle-down"></span>
+                            <ul class="dropdown dropdown__scanners">
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        ELM327 сканери
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Мультимарочні сканери
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Сканери Launch
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Кабелі - адаптери
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">
+                                Товщиноміри
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__elm327" href="">
+                                Про ELM327
+                            </a>
+                            <span class="drop-elm327 icon-angle-down"></span>
+                            <ul class="dropdown dropdown__elm327">
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Можливості ELM327
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Різновиди ELM327
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="">
+                                        Програми для ELM327
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">
+                                Доставка і оплата
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="">
+                                Контакти
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="bgslider">
+                <div class="container">
+                    <div class="slider">
+                        <div class="slider__item">
+                            <div class="slider__car" style="background-image: url(img/car.jpg);"></div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__inner">
+                                <div class="slider__img">
+                                    <img src="img/elmmini.png" alt="ELM327">
+                                </div>
+                                <div class="slider__text">
+                                    <h3 class="slider__title">
+                                        Cканер ELM327
+                                    </h3>
+                                    <ul class="slider__advantages">
+                                        <li class="icon-check">
+                                            <div class="advantage">1.5 версія дві плати чіп PIC18F25K80</div>
+                                        </li>
+                                        <li class="icon-check">
+                                            <div class="advantage">Працює з Android/IOS по Bluetooth/WIFI</div>
+                                        </li>
+                                        <li class="icon-check">
+                                            <div class="advantage">Працює зі спеціалізованими програмами</div>
+                                        </li>
+                                    </ul>
+                                    <a class="main__btn icon-long-arrow-right" href="">
+                                        <div class="main__btn-text">Дізнатись більше</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__inner">
+                                <div class="slider__text">
+                                    <h3 class="slider__title">
+                                        Delphi DS150E
+                                    </h3>
+                                    <ul class="slider__advantages">
+                                        <li class="icon-check">
+                                            <div class="advantage">Програма 2017 року</div>
+                                        </li>
+                                        <li class="icon-check">
+                                            <div class="advantage">Зелені плати, реле 5V</div>
+                                        </li>
+                                        <li class="icon-check">
+                                            <div class="advantage">Працює з легковим та вантажним транспортом</div>
+                                        </li>
+                                        <li class="icon-check">
+                                            <div class="advantage">Присутній Bluetooth модуль</div>
+                                        </li>
+                                    </ul>
+                                    <a class="main__btn icon-long-arrow-right" href="">
+                                        <div class="main__btn-text">Дізнатись більше</div>
+                                    </a>
+                                </div>
+                                <div class="slider__img">
+                                    <img src="img/delphi.png" alt="Delphi DS150E">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banners">
+                <div class="container">
+                    <div class="banners__inner">
+                        <a class="banners__item" href="">
+                            <div class="banners__title">
+                                Сканери для діагностики                           </div>
+                            <div class="banners__img">
+                                <img src="img/scaner.jpg" alt="">
+                            </div>
+                        </a>
+                        <a class="banners__item" href="">
+                            <div class="banners__title">
+                                Товщиноміри фарби
+                            </div>
+                            <div class="banners__img">
+                                <img src="img/gm998.jpg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <div class="container">
+                    <div class="title">
+                        Наші переваги
+                    </div>
+                    <div class="advantages__inner">
+                        <div class="advantages__item">
+                            <div class="advantages__img">
+                                <img src="img/ship.svg" alt="Безкоштовна доставка">
+                            </div>
+                            <div class="advantages__text">
+                                Безкоштовна доставка <span>(*замовлення від 1500грн)</span>
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__img">
+                                <img class="consalt" src="img/consalt.svg" alt="Безкоштовна доставка">
+                            </div>
+                            <div class="advantages__text">
+                                Допомога у виборі та налаштуванні обладнання
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__img">
+                                <img src="img/garant.svg" alt="Безкоштовна доставка">
+                            </div>
+                            <div class="advantages__text">
+                                Гарантія на всі сканери і товщиноміри
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="goods">
+                <div class="container">
+                    <div class="title">
+                        Найчастіше у нас купують
+                    </div>
+                    <div class="goods__slider">
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/delphi.jpg);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Мультимарочний сканер Delphi DS150E
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">1300грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/TC100.jpg);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Товщиномір R&D TC100
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">1200грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/elmmini.png);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Універсальний сканер ELM327 1.5V (PIC18F25K80)
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">300грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/gm998.jpg);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Товщиномір R&D GM998
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">1500грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/cr319.jpg);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Сканер Launch CR319 
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">750грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/ford_usb.png);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Сканер ELM327 для Ford/Mazda з перемикачем
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">480грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="goods__item">
+                            <a class="goods__img" href="" title="Перейти на сторінку товару" style="background-image: url(img/cr619.jpg);"></a>
+                            <div class="goods__inner">
+                                <a class="goods__text" href="">
+                                    Сканер Launch CR619
+                                </a>
+                                <div class="goods__btns">
+                                    <div class="goods__price">2650грн</div>
+                                    <a class="main__btn icon-long-arrow-right btn-transparent" href="">
+                                        <div class="main__btn-text">Детальніше</div>
+                                    </a>
+                                    <a class="main__btn icon-shopping-cart" href="">
+                                        <div class="main__btn-text">Купити в 1 клік</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+
         <footer class="footer">
-            Footer
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="logo">
+                        <a class="logo__img" href="index.html" title="Autoscan - інтернет-магазин автомобільної діагностики">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        <div class="logo__text">
+                            Інтернет-магазин автомобільної діагностики
+                        </div>
+                    </div>
+                    <nav class="footer-menu">
+                        <ul class="footer-menu__list">
+                            <li class="footer-menu__item">
+                                <a href="">
+                                    Умови повернення
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="">
+                                    Умови гарантії
+                                </a>
+                            </li>
+                            <li class="footer-menu__item">
+                                <a href="">
+                                    Контакти
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="phones icon-phone">
+                        <a class="phones__number" href="tel:0667917417">
+                            066 79 17 417
+                        </a>
+                        <a class="phones__number" href="tel:0974014601">
+                            097 40 14 601
+                        </a>
+                    </div>
+                    <div class="footer-socials">
+                        <a class="footer-socials__link icon-youtube-play" href="">
+                            <span>Ми в Youtube</span>
+                        </a>
+                        <a class="footer-socials__link icon-telegram" href="tg://resolve?domain=vasylyurchyshyn">
+                            <span>Наш Telegram</span>
+                        </a>
+                        <a class="footer-socials__link icon-viber" href="viber://add?number=380667917417">
+                            <span>Наш Viber</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -2,5 +2,510 @@
 @import "vars";
 @import "fonts";
 
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+// header start
+.header{
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    background-color: #f8f8f8;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+    }
+}
 
+.logo{
+    display: inline-block;
+    text-align: center;
+    &__text{
+        color: $blue-text;
+    }
+}
+
+.worktime{
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+    &__hours{
+        font-family: 'Roboto Condensed', sans-serif;
+        margin-bottom: 5px;
+    }
+    &__days{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    &:before{
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 35px;
+        color: $blue-text;
+    }
+}
+
+.phones{
+    padding-left: 40px;
+    position: relative;
+    display: inline-block;
+    &__number{
+        display: block;
+        font-family: 'Roboto Condensed', sans-serif;
+        &+.phones__number{
+            margin-top: 5px;
+        }
+        &:hover{
+            color: $blue-text;
+        }
+    }
+    &::before{
+       position: absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+        font-size: 35px;
+        color: $blue-text;
+    }
+}
+// header end
+
+// menu start
+.menu{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top:80px;
+    background-color: $main;
+    color: #fff;
+    font-size: 18px;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        a{
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: transparent;
+            &:hover{
+                background-color: #000;
+            }
+        }
+        span{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            right: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.menu__btn{
+    display: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+
+.dropdown{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top:50px;
+    color: #000;
+    width: 250px;
+    background-color: #f8f8f8;
+    z-index: 5;
+    box-shadow: 0 0 7px rgba(0,0,0,0.08);
+    a{
+        width: 100%;
+        &:hover{
+            color: #fff;
+            transform: translateX(7px);
+        }
+    }
+}
+
+.menu__item:hover .dropdown{
+    display: block;
+}
+
+a.menu__scanners{
+    padding-right: 25px;
+}
+
+a.menu__elm327{
+    padding-right: 25px;
+}
+// menu end
+
+// slider start
+.slider__car{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.bgslider{
+    margin-top: 180px;
+}
+.slider{
+    z-index: 1;
+    background-color:$bg-grey;
+    padding: 40px 20px;
+    margin: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__img{
+        margin-left: 20px;
+    }
+    &__text{
+        margin: 0 20px;
+    }
+    &__title{
+        font-size: 70px;
+    }
+}
+
+.slider__advantages .icon-check{
+    padding: 10px 10px 10px 35px;
+    position: relative;
+    &:before{
+        font-size: 30px;
+        color: green;
+        position: absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}
+
+.advantage{
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-size: 20px; 
+    line-height: 22px;
+}
+
+.main__btn{
+    padding: 10px 40px 10px 20px;
+    background-color: $bg-btn;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    position: relative;
+    &:before{
+        position: absolute;
+        right: 15px;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    &:hover{
+        background-color: $bg-btn-hover;
+    }
+    &-text{
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+}
+.slick-arrows{
+    opacity: 0;
+    transition: 0.5s;
+}
+.slider:hover .slick-arrows{
+    opacity: 1;
+}
+
+.slick-arrows img{
+    width: 30px;
+    height: 30px;
+}
+
+.slick-prev{
+    left: 5px;
+}
+
+.slick-next{
+    right: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before{
+    display: none;
+}
+// slider end
+
+// banners start
+.banners{
+    background-color: $bg-grey;
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 48%;
+        padding: 10px 20px;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__title{
+        font-size: 24px;
+        width: 50%;
+        transition: 0.3s;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    &__img{
+        width: 40%;
+        overflow: hidden;
+        img{
+            transition: 0.3s;
+        }
+    }
+}
+
+.banners__item:hover img{
+    transform: scale(1.1);
+}
+// banners end
+
+// advantages start
+.advantages{
+    padding: 50px 0;
+    background-color: #fff;
+    &__inner{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    &__item{
+        flex-basis: 33.333%;
+        text-align: center;
+    }
+    &__img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: $bg-btn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        img{
+            width: 70%;
+        }
+    }
+    &__text{
+        max-width: 250px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 10px;
+        span{
+            font-size: 14px;
+        }
+    }
+}
+
+.advantages__img img.consalt{
+    width: 60%;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+// advantages end
+
+// goods start
+.goods{
+    padding: 50px 0;
+    background-color: $bg-grey;
+}
+
+.goods__slider{
+    .slick-next{
+        right: 20px;
+        top:45%;
+    }
+    .slick-prev{
+        left: 10px;
+        top:45%;
+        z-index: 30;
+    }
+}
+
+.goods__slider:hover .slick-arrows{
+    opacity: 1;
+}
+
+.goods__item{
+    max-width: 270px;
+    background-color: #fff;
+    transition: 0.5s;
+    padding: 20px 10px;
+    overflow: hidden;
+    margin: 0 11px;
+    a{
+        display: block;
+    }
+    .main__btn{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.goods__text{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.goods__img{
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    transition: 0.5s;
+    &:focus{
+        outline: none;
+    }
+}
+
+.goods__price{
+    text-align: right;
+    font-size: 18px;
+}
+
+.goods__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 175px;
+}
+
+.goods__item:hover .goods__img{
+    transform: scale(1.1);
+}
+
+.main__btn.icon-shopping-cart{
+    background-color: green;
+    transition: 0.3s;
+    &:hover{
+        background-color: rgba($color: green, $alpha: 0.8);
+    }
+}
+// goods end
+
+// footer start
+.footer{
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+}
+
+.footer-menu__item{
+    transition: 0.3s;
+}
+
+.footer-menu__item:hover{
+    opacity: 0.9;
+}
+
+.footer-menu__item + .footer-menu__item{
+    margin-top: 5px;
+}
+
+.footer-socials{
+    a{
+        display: block;
+    }
+    a + a{
+        margin-top: 10px;
+    }
+    span{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 16px;
+        color: #000;
+        transition: 0.3s;
+    }
+}
+
+.icon-youtube-play{
+    color: #FF0000;
+    font-size: 24px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 18%;
+    }
+    &:hover{
+        span{
+            color: #ff0000;
+        }
+    }
+}
+
+.icon-telegram{
+    color: #1489C4;
+    font-size: 24px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 18%;
+    }
+    &:hover{
+        span{
+            color: #1489C4;
+        }
+    }
+}
+
+.icon-viber{
+    color: #665cac;
+    font-size: 24px;
+    position: relative;
+    padding-left: 30px;
+    &:before{
+        position: absolute;
+        left: 0;
+        top: 18%;
+    }
+    &:hover{
+        span{
+            color: #665cac;
+        }
+    }
+}
+// footer end
 @import "media";
